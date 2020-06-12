@@ -161,14 +161,6 @@ mod tests {
         for _ in 0..3 {
             test.push(buf.pop().unwrap());
         }
-        println!("actaul:",);
-        for x in &actual {
-            println!("{}", x);
-        }
-        println!("\nresult:",);
-        for x in &test {
-            println!("{}", x);
-        }
         assert_eq!(actual, test);
     }
 }
