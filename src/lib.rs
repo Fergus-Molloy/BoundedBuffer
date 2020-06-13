@@ -33,16 +33,14 @@ where
     /// Panics if given a size of 0
     pub fn new(size: usize) -> BoundedBuffer<T> {
         if size == 0 {
-            panic!("cannot create a BoundedBuffer of size 0");
+            panic!("cannot create a BoundedBuffer of size 0"); //todo return err instead
         }
-        let mut list = Vec::with_capacity(size);
-        let front = 0;
-        let back = 0;
+        let list = Vec::with_capacity(size);
         BoundedBuffer {
             list,
             size,
-            front,
-            back,
+            front: 0,
+            back: 0,
         }
     }
 
@@ -75,6 +73,7 @@ where
             Ok(item)
         }
     }
+    
     /// Pop the oldest item out of the buffer
     /// Returns an option as buffer could be empty
     ///
@@ -87,7 +86,7 @@ where
     /// println!("{}",buf.pop().unwrap());
     /// ```
     ///
-    pub fn pop(&mut self) -> Option<T> {
+    pub fn pop(&mut self) -> Option<T> { //todo write a wrapper function to return result instead of storing option
         if self.list.len() == 0 {
             None
         } else {
