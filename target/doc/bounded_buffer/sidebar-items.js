@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["BoundedBuffer","Implements a circular queue as a fixed size vector"]]});

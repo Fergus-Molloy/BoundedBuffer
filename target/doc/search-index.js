@@ -1,4 +1,0 @@
-var searchIndex = JSON.parse('{\
-"bounded_buffer":{"doc":"A circular queue within a fixed size buffer","i":[[3,"BoundedBuffer","bounded_buffer","Implements a circular queue as a fixed size vector",null,null],[11,"new","","Create a new instance of a BoundedBuffer",0,[[],["boundedbuffer",3]]],[11,"push","","Push a new item into the buffer",0,[[],["result",4]]],[11,"pop","","Pop the oldest item in the buffer",0,[[],["result",4]]],[11,"from","","",0,[[]]],[11,"into","","",0,[[]]],[11,"borrow","","",0,[[]]],[11,"borrow_mut","","",0,[[]]],[11,"try_from","","",0,[[],["result",4]]],[11,"try_into","","",0,[[],["result",4]]],[11,"type_id","","",0,[[],["typeid",3]]]],"p":[[3,"BoundedBuffer"]]}\
-}');
-addSearchOptions(searchIndex);initSearch(searchIndex);
